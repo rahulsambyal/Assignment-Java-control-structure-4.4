@@ -1,0 +1,42 @@
+class Java
+{
+	int x,y,area;
+	public Java(){
+		Scanner scan= new Scanner(System.in);
+		System.out.println("enter the Height");
+		x= scan.nextInt();
+		Scanner scan1= new Scanner(System.in);
+		System.out.println("enter the width");
+		y= scan1.nextInt();
+	}
+	public int getarea()
+	{
+		
+		area= x*y;
+		return area;
+		
+	}
+}
+public class Testmain extends Java {
+	public void addition(){
+		Scanner scan= new Scanner(System.in);
+		System.out.println("Enter the first number to add");
+		int i= scan.nextInt();
+		Scanner scan1= new Scanner(System.in);
+		System.out.println("Enter the second no to be added");
+		int j= scan1.nextInt();
+		
+		int add= i+j;
+		System.out.println("addition of 2 numbers is :"+add);
+		}
+}
+public class Mainclass {
+	public static void main(String[] args){
+		
+		Testmain b= new Testmain();
+		System.out.println("the area is :"+ b.getarea());
+	    b.addition();
+		
+	}
+
+}
